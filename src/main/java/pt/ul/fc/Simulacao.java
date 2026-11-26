@@ -66,7 +66,7 @@ public class Simulacao {
         }
         if (bola.getY() < RAIO) {
             bola.setPosicao(bola.getX(), RAIO);
-            bola.setVelocidade(bola.getVx(), bola.getVy() * COEFICIENTE_RESTITUICAO);
+            bola.setVelocidade(bola.getVx(), -bola.getVy() * COEFICIENTE_RESTITUICAO);
         } else if (bola.getY() > ALTURA - RAIO) {
             bola.setPosicao(bola.getX(), ALTURA - RAIO);
             bola.setVelocidade(bola.getVx(), -bola.getVy());
